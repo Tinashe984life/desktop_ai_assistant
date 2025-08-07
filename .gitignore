@@ -1,0 +1,9 @@
+# Ignore Python virtual environments
+/backend/venv/
+
+# Ignore environment variables files
+/backend/.env
+
+# Other potential ignore patterns
+*.pyc
+backend/__pycache__/
