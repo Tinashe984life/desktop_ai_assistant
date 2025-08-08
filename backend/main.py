@@ -55,8 +55,8 @@ Always keep your responses brief and to the point. Do not engage in a conversati
 SETTINGS_FILE = "assistant_settings.json"
 DEFAULT_SETTINGS = {
     "model": "gemini-1.5-flash",
-    "temperature": 0.3,
-    "max_output_tokens": 2048,
+    "temperature": 0.7,
+    "max_output_tokens": 8000,
     "default_prompt": MAIN_SYSTEM_PROMPT,
     "auto_capture": True,
     "recent_prompts": [],
@@ -137,8 +137,8 @@ def analyze_screenshot(image_path: str, prompt: Optional[str] = ""):
         
         # Get settings values
         model = app_settings.get('model', 'gemini-1.5-flash')
-        temperature = app_settings.get('temperature', 0.3)
-        max_tokens = app_settings.get('max_output_tokens', 2048)
+        temperature = app_settings.get('temperature', 0.7)
+        max_tokens = app_settings.get('max_output_tokens', 8000)
         
         # Add generation config if supported
         try:

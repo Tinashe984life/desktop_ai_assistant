@@ -57,7 +57,7 @@ function App() {
             <h2 className="text-xl font-semibold mb-2">Screenshot</h2>
             <div className="border border-gray-700 rounded overflow-hidden max-w-md">
               <img 
-                src={`file://${screenshot}`} 
+                src={`../../backend/screenshots/${screenshot}`} 
                 alt="Captured screen" 
                 className="w-full"
               />
